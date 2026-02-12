@@ -1,6 +1,8 @@
 // Admin panel functionality
 
-// Authentication credentials (in production, this would be server-side)
+// WARNING: These credentials are hardcoded for demonstration purposes only.
+// In a production environment, implement proper server-side authentication.
+// DO NOT use this approach with real credentials - it's visible in the browser's source code.
 const ADMIN_CREDENTIALS = {
     username: 'admin',
     password: 'admin123'
@@ -29,7 +31,7 @@ function setupEventListeners() {
     // Logout button
     const logoutBtn = document.getElementById('logout-btn');
     if (logoutBtn) {
-        logoutBtn.addEventListener('submit', handleLogout);
+        logoutBtn.addEventListener('click', handleLogout);
     }
     
     // Upload form
@@ -191,11 +193,3 @@ function getArtPieces() {
 function saveArtPieces(artPieces) {
     localStorage.setItem('artPieces', JSON.stringify(artPieces));
 }
-
-// Add event listener to logout button
-document.addEventListener('DOMContentLoaded', () => {
-    const logoutBtn = document.getElementById('logout-btn');
-    if (logoutBtn) {
-        logoutBtn.addEventListener('click', handleLogout);
-    }
-});
