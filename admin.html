@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Chris Broussard Art</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chris Broussard Art</h1>
+        <p class="subtitle">Admin Panel</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="series.html">Full Series</a>
+            <a href="admin.html" class="active">Admin</a>
+        </nav>
+    </header>
+
+    <main class="admin-page">
+        <!-- Login Section -->
+        <section id="login-section" class="login-section">
+            <div class="login-box">
+                <h2>Admin Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                    <p class="error-message" id="login-error"></p>
+                </form>
+                <p class="login-hint">Default credentials: admin / admin123</p>
+            </div>
+        </section>
+
+        <!-- Admin Panel Section (hidden until logged in) -->
+        <section id="admin-panel" class="admin-panel" style="display: none;">
+            <div class="admin-header">
+                <h2>Upload Art Pieces</h2>
+                <button id="logout-btn" class="btn-secondary">Logout</button>
+            </div>
+
+            <div class="upload-section">
+                <form id="upload-form">
+                    <div class="form-group">
+                        <label for="art-image">Select Image:</label>
+                        <input type="file" id="art-image" name="art-image" accept="image/*" required>
+                        <div id="image-preview" class="image-preview"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="art-title">Title:</label>
+                        <input type="text" id="art-title" name="art-title" placeholder="Enter artwork title" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="art-width">Width (inches):</label>
+                            <input type="number" id="art-width" name="art-width" placeholder="24" step="0.1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="art-height">Height (inches):</label>
+                            <input type="number" id="art-height" name="art-height" placeholder="36" step="0.1" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="art-slot">Slot Position (0-49):</label>
+                        <input type="number" id="art-slot" name="art-slot" min="0" max="49" placeholder="0" required>
+                        <small>Position 0 is the statement piece on the landing page. Positions 1-8 appear on landing page. All 50 positions appear in the series page.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="art-description">Description (optional):</label>
+                        <textarea id="art-description" name="art-description" rows="3" placeholder="Enter artwork description"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Upload Art</button>
+                </form>
+            </div>
+
+            <div class="manage-section">
+                <h3>Manage Existing Art</h3>
+                <div id="art-list" class="art-list">
+                    <!-- Existing art pieces will be listed here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chris Broussard Art. All rights reserved.</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
