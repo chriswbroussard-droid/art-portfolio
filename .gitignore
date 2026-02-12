@@ -1,0 +1,21 @@
+# Ignore common files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+.cache/
+
+# Build files (if using build tools in future)
+dist/
+build/
