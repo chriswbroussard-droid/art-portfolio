@@ -4,9 +4,9 @@ This directory contains images for the art portfolio website.
 
 ## Structure
 
-- `placeholder*.jpg` - Placeholder images for gallery items
-- `artist-photo.jpg` - Artist profile photo
-- `favicon.png` - Website favicon
+- `placeholder*.svg` - Placeholder images for gallery items
+- `artist-photo.svg` - Artist profile photo
+- `favicon.svg` - Website favicon (located in root directory)
 
 ## Adding Your Own Images
 

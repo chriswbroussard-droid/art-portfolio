@@ -77,11 +77,7 @@ window.addEventListener('scroll', () => {
 
 // Image lazy loading fallback (for older browsers)
 if ('loading' in HTMLImageElement.prototype) {
-    // Browser supports lazy loading natively
-    const images = document.querySelectorAll('img[loading="lazy"]');
-    images.forEach(img => {
-        img.src = img.src;
-    });
+    // Browser supports lazy loading natively - no action needed
 } else {
     // Fallback for browsers that don't support lazy loading
     const script = document.createElement('script');
