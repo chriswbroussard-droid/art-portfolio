@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artist Portfolio - Showcasing creative artwork and projects">
+    <meta name="author" content="Artist Name">
+    <meta name="keywords" content="art, portfolio, gallery, artwork, artist">
+    <title>Art Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Art Portfolio</h1>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Welcome to My Art Portfolio</h2>
+            <p class="hero-subtitle">Explore my creative journey through visual art</p>
+            <a href="#gallery" class="btn btn-primary">View Gallery</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">A collection of my recent works</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/placeholder1.svg" alt="Artwork 1" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Artwork Title 1</h3>
+                        <p>Medium: Digital Art</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/placeholder2.svg" alt="Artwork 2" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Artwork Title 2</h3>
+                        <p>Medium: Acrylic on Canvas</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/placeholder3.svg" alt="Artwork 3" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Artwork Title 3</h3>
+                        <p>Medium: Watercolor</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/placeholder4.svg" alt="Artwork 4" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Artwork Title 4</h3>
+                        <p>Medium: Mixed Media</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/placeholder5.svg" alt="Artwork 5" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Artwork Title 5</h3>
+                        <p>Medium: Oil Painting</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/placeholder6.svg" alt="Artwork 6" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Artwork Title 6</h3>
+                        <p>Medium: Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/artist-photo.svg" alt="Artist Photo">
+                </div>
+                <div class="about-text">
+                    <h3>Artist Bio</h3>
+                    <p>Welcome to my portfolio! I'm a passionate artist dedicated to creating meaningful visual experiences. My work explores the intersection of creativity and emotion, using various mediums to express unique perspectives.</p>
+                    <p>With years of experience in digital and traditional art forms, I strive to push boundaries and create pieces that resonate with viewers on a personal level.</p>
+                    <div class="about-skills">
+                        <h4>Skills & Mediums</h4>
+                        <ul>
+                            <li>Digital Illustration</li>
+                            <li>Acrylic & Oil Painting</li>
+                            <li>Watercolor</li>
+                            <li>Mixed Media</li>
+                            <li>Photography</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Interested in collaborating or purchasing artwork?</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>You can also reach me at:</p>
+                <p><strong>Email:</strong> artist@example.com</p>
+                <p><strong>Social:</strong> @artisthandle</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Art Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
